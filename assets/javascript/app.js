@@ -1,7 +1,9 @@
+
+
 var questions = [
     {
         "question": "Who was Henry McCarty better known as?",
-        "allAnswers": ["Billy the Kid ", "Kid Curry ", "Black Bart ", "Butch Cassidy "],
+        "allAnswers": ["Billy the kid", "Kid Curry", "Black Bart ", "Butch Cassidy "],
         "correctAnswer": "Billy the Kid"
     },
     {
@@ -51,9 +53,21 @@ var questions = [
     }];
 
 
+var userInput;
+var questionCount;
+var correct = 0;
+var incorrect = 0;
+var questionIndex = 0;
 
-var correct = 0
-var incorrect = 0
+
+$("#done").hide()
+
+
+// function renderQuestion() {
+//     if (questionIndex <= (questions.length - 1))
+// }
+
+
 
 
 
@@ -64,19 +78,15 @@ $("#start").on("click", function () {
 
         var questionDiv = $("<div class='questions'>");
         var answerDiv = $("<div class='answers'>");
-
-
-        // var letter;
-        // var txt = "";
-        // for (letter in questions[i].allAnswers[i]) {
-        //     txt += questions[i].allAnswers[letter] + radio;
-        // };
-
-
-
-
         questionDiv.html(questions[i].question);
-        answerDiv.html(questions[i].allAnswers);
+
+        for (j = 0; j < questions[i].allAnswers.length; j++) {
+            console.log(questions[i].allAnswers[j]);
+            answerDiv.append(questions[i].allAnswers[j]);
+            var radio = $("<input>");
+            radio.attr("type", "radio");
+            answerDiv.append(radio);
+        }
 
         (questionDiv).append(answerDiv);
 

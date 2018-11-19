@@ -7,10 +7,12 @@ h1 {
     text-align: center;
     font-size: 80px;
     margin: 100px;
+    margin-bottom: 50px;
     color:  rgb(161, 86, 36);
     border: 5px dotted rgb(109, 65, 23);
     background-color: peru;
     width: auto;
+    position: relative;
     
 }
 
@@ -18,11 +20,12 @@ h1 {
     font-family: 'Allerta Stencil', sans-serif;
     text-align: center;
     font-size: 80px;
-    margin-left: 300px;
     color:  rgb(161, 86, 36);
     border: 5px dotted rgb(109, 65, 23);
     background-color: peru;
     width: 800px;
+    position: absolute;
+    margin-left: 115px;
 }
 
 .questions {
