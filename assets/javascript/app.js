@@ -1,5 +1,3 @@
-
-
 var questions = [
     {
         "question": "Who was Henry McCarty better known as?",
@@ -52,38 +50,32 @@ var questions = [
         "correctAnswer": "John Colter"
     }];
 
-$("#done").hide()
+$("#done").hide();
 
 var userInput;
-var questionCount;
 var correct = 0;
 var incorrect = 0;
-var questionIndex = 0;
-
-var number = 30;
+var timer = 3;
 var intervalId;
 
 function run() {
     intervalId = setInterval(decrement, 1000);
 }
-
 function decrement() {
-
-    number--;
-
-    $("#show-timer").html("<h2>" + number + "</h2>");
-
-    if (number === 0) {
-
+    timer--;
+    $("#show-timer").text(timer);
+    if (timer === 0) {
         stop();
-
-        alert("Time Up!");
-    }
-}
-
+        endGame();
+    };
+};
 function stop() {
-
     clearInterval(intervalId);
+};
+
+function endGame() {
+    $("#question-list").hide();
+
 }
 
 
@@ -116,7 +108,10 @@ $("#start").on("click", function () {
     $("#start").hide();
     $("#done").text("Submit");
 });
-;
+
+$("#done").on("click", function () {
+    endGame();
+})
 
 
 

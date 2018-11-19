@@ -13,6 +13,7 @@ h1 {
     background-color: peru;
     width: auto;
     position: relative;
+    box-sizing: border-box;
     
 }
 
@@ -26,6 +27,19 @@ h1 {
     width: 800px;
     position: absolute;
     margin-left: 115px;
+    box-sizing: border-box;
+}
+
+#show-timer {
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin: 20px;
+    color:  rgb(161, 86, 36);
+    border: 5px dotted rgb(109, 65, 23);
+    background-color: peru;
+    width: 120px;
+    box-sizing: border-box;
 }
 
 .questions {
@@ -37,6 +51,7 @@ h1 {
     background-color: peru;
     width: auto;
     margin: 10px;
+    box-sizing: border-box;
 }
 
 #done {
@@ -48,4 +63,5 @@ h1 {
     border: 5px dotted rgb(109, 65, 23);
     background-color: peru;
     width: auto;
+    box-sizing: border-box;
 }
