@@ -52,6 +52,7 @@ var questions = [
         "correctAnswer": "John Colter"
     }];
 
+$("#done").hide()
 
 var userInput;
 var questionCount;
@@ -59,13 +60,31 @@ var correct = 0;
 var incorrect = 0;
 var questionIndex = 0;
 
+var number = 30;
+var intervalId;
 
-$("#done").hide()
+function run() {
+    intervalId = setInterval(decrement, 1000);
+}
 
+function decrement() {
 
-// function renderQuestion() {
-//     if (questionIndex <= (questions.length - 1))
-// }
+    number--;
+
+    $("#show-timer").html("<h2>" + number + "</h2>");
+
+    if (number === 0) {
+
+        stop();
+
+        alert("Time Up!");
+    }
+}
+
+function stop() {
+
+    clearInterval(intervalId);
+}
 
 
 
@@ -73,7 +92,7 @@ $("#done").hide()
 
 // starts the game when user clicks the start div
 $("#start").on("click", function () {
-
+    run();
     for (i = 0; i < questions.length; i++) {
 
         var questionDiv = $("<div class='questions'>");
@@ -97,6 +116,7 @@ $("#start").on("click", function () {
     $("#start").hide();
     $("#done").text("Submit");
 });
+;
 
 
 
