@@ -50,12 +50,12 @@ var questions = [
         "correctAnswer": "John Colter"
     }];
 
-$("#done").hide();
+
 
 var userInput;
 var correct = 0;
 var incorrect = 0;
-var timer = 3;
+var timer = 300;
 var intervalId;
 
 function run() {
@@ -75,16 +75,10 @@ function stop() {
 
 function endGame() {
     $("#question-list").hide();
-
+    $("#done").hide();
 }
 
-
-
-
-
-// starts the game when user clicks the start div
-$("#start").on("click", function () {
-    run();
+function quizSetUp() {
     for (i = 0; i < questions.length; i++) {
 
         var questionDiv = $("<div class='questions'>");
@@ -92,27 +86,35 @@ $("#start").on("click", function () {
         questionDiv.html(questions[i].question);
 
         for (j = 0; j < questions[i].allAnswers.length; j++) {
-            console.log(questions[i].allAnswers[j]);
+            var eachAnswer = questions[i].allAnswers[j];
             answerDiv.append(questions[i].allAnswers[j]);
             var radio = $("<input>");
             radio.attr("type", "radio");
+            radio.attr("class", "radioBtn");
+            radio.attr("data-answer", eachAnswer);
             answerDiv.append(radio);
+            console.log(answerDiv);
         }
-
         (questionDiv).append(answerDiv);
-
         $("#question-list").append(questionDiv);
+        // hides start button
+        $("#start").hide();
+        $("#done").text("Submit");
     }
+}
 
-    // hides start button
-    $("#start").hide();
-    $("#done").text("Submit");
+// starts the game when user clicks the start div
+$("#start").on("click", function () {
+    run();
+    quizSetUp();
 });
+
 
 $("#done").on("click", function () {
     endGame();
-})
-
+    stop();
+    $("#show-timer").hide();
+});
 
 
 
