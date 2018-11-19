@@ -1,53 +1,53 @@
 var questions = [
     {
-        "question": "The next Playstation platform will be:",
-        "allAnswers": ["PS5 ", "PS4K ", "PSX ", "PS8K "],
-        "correctAnswer": "B"
+        "question": "Who was Henry McCarty better known as?",
+        "allAnswers": ["Billy the Kid ", "Kid Curry ", "Black Bart ", "Butch Cassidy "],
+        "correctAnswer": "Billy the Kid"
     },
     {
-        "question": "The Sloth's scientific name, Bradypus, is Greek for:",
-        "allAnswers": ["Moving slowly", "Swiftly", "Slow feet", "Sleeping"],
-        "correctAnswer": "C"
+        "question": "Which ex sheriff of Dodge City ended his working career as a sports writer for a New York newspaper?",
+        "allAnswers": ["Pat Garret", "Bat Masterson", "Wyatt Earp", "Bill Tilghman"],
+        "correctAnswer": "Bat Masterson"
     },
     {
-        "question": "Earth is how far away from the Sun:",
-        "allAnswers": ["92.96 Million Miles", "82.96 Million Miles", "102.96 Million Miles", "72.96 Million Miles"],
-        "correctAnswer": "A"
+        "question": "How did Jesse James die?",
+        "allAnswers": ["executed by hanging", "shot dead", "died in a knife fight", "natural causes"],
+        "correctAnswer": "shot dead"
     },
     {
-        "question": "The first issue of National Geographic was issued in:",
-        "allAnswers": ["1901", "1874", "1888", "1926"],
-        "correctAnswer": "C"
+        "question": "Which Indian Chief, who was victorious in the Battle of the Little Big Horn which led to the defeat of Lieutenant Colonel Custer, also found fame as a member of Buffalo Bill's Wild West Show?",
+        "allAnswers": ["Chief Crazy Horse", "Chief Two Moons", "Chief Rain in the Face", "Chief Sitting Bull"],
+        "correctAnswer": "Chief Sitting Bull"
     },
     {
-        "question": "It is approximitely how hot on the planet Venus:",
-        "allAnswers": ["262 Degrees C", "162 Degrees C", "462 Degrees C", "862 Degrees C"],
-        "correctAnswer": "C"
+        "question": "7. Who was shot dead during a game of poker, holding what is now termed 'The Dead Man's Hand?'",
+        "allAnswers": ["Wild Bill Hickok", "Doc Holliday", "Pat Garrett", "Frank James"],
+        "correctAnswer": "Wild Bill Hickok"
     },
     {
-        "question": "What type of star is the Sun:",
-        "allAnswers": ["White Dwarf", "Yellow Dwarf", "The sun is NOT a star", "Orange Dwarf"],
-        "correctAnswer": "B"
+        "question": "Which is the correct name for a famous cattle trail?",
+        "allAnswers": ["Goodnight-Loving", "Goodbye-Lover", "Goodluck-Loving", "Goodnight-Love"],
+        "correctAnswer": "Goodnight-Loving"
     },
     {
-        "question": "Approximitely how much of the ocean has been explored:",
-        "allAnswers": ["12%", "23%", "38%", "5%"],
-        "correctAnswer": "D"
+        "question": " Members of which Indian Nation were massacred at Wounded Knee?",
+        "allAnswers": ["Navajo", "Apache", "Sioux", "Comanche"],
+        "correctAnswer": "Sioux"
     },
     {
-        "question": "Approximitely how long did it take for the Apollo missions to reach the moon:",
-        "allAnswers": ["36 hours", "24 hours", "72 hours", "96 hours"],
-        "correctAnswer": "C"
+        "question": "If, after being robbed, you found a poem at the scene of the crime, who would have been the robber?",
+        "allAnswers": ["Black Bart", "Butch Cassidy", "Sundance Kid", "Cherokee Bill"],
+        "correctAnswer": "Black Bart"
     },
     {
-        "question": "The world record for most spoons balanced on the face is:",
+        "question": "Who was Harvey Logan better known as?",
         "allAnswers": ["45 spoons", "62 spoons", "31 spoons", "91 spoons"],
-        "correctAnswer": "C"
+        "correctAnswer": "Kid Curry"
     },
     {
-        "question": "The world record for most socks put on one foot in one minute is:",
-        "allAnswers": ["12 socks", "28 socks", "48 socks", "67 socks"],
-        "correctAnswer": "C"
+        "question": "Who is considered to be the first 'mountain man'?",
+        "allAnswers": ["Forrest Hancock", "Manuel Lisa", "Joseph Dickson", "John Colter"],
+        "correctAnswer": "John Colter"
     }];
 
 
