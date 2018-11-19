@@ -73,9 +73,7 @@ $("#start").on("click", function () {
         // };
 
 
-        var radio = $("<input>");
-        radio.attr("type", "radio");
-        questions[i].allAnswers.push(radio);
+
 
         questionDiv.html(questions[i].question);
         answerDiv.html(questions[i].allAnswers);

@@ -1,0 +1,48 @@
+body {
+    background-image: url("../images/background.jpg");
+}
+
+h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin: 100px;
+    color:  rgb(161, 86, 36);
+    border: 5px dotted rgb(109, 65, 23);
+    background-color: peru;
+    width: auto;
+    
+}
+
+#start {
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin-left: 300px;
+    color:  rgb(161, 86, 36);
+    border: 5px dotted rgb(109, 65, 23);
+    background-color: peru;
+    width: 800px;
+}
+
+.questions {
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color:  rgb(161, 86, 36);
+    border: 5px dotted rgb(109, 65, 23);
+    background-color: peru;
+    width: auto;
+    margin: 10px;
+}
+
+#done {
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin: 100px;
+    color:  rgb(161, 86, 36);
+    border: 5px dotted rgb(109, 65, 23);
+    background-color: peru;
+    width: auto;
+}
