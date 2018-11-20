@@ -50,8 +50,6 @@ var questions = [
         "correctAnswer": "John Colter"
     }];
 
-
-
 var userInput;
 var correct = 0;
 var incorrect = 0;
@@ -83,18 +81,21 @@ function quizSetUp() {
 
         var questionDiv = $("<div class='questions'>");
         var answerDiv = $("<div class='answers'>");
+
         questionDiv.html(questions[i].question);
+
 
         for (j = 0; j < questions[i].allAnswers.length; j++) {
             var eachAnswer = questions[i].allAnswers[j];
-            answerDiv.append(questions[i].allAnswers[j]);
+            answerDiv.append(eachAnswer);
             var radio = $("<input>");
+            radio.attr("name", questions[i].allAnswers);
             radio.attr("type", "radio");
             radio.attr("class", "radioBtn");
             radio.attr("data-answer", eachAnswer);
             answerDiv.append(radio);
-            console.log(answerDiv);
-        }
+        };
+
         (questionDiv).append(answerDiv);
         $("#question-list").append(questionDiv);
         // hides start button
